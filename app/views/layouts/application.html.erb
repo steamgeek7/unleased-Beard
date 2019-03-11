@@ -8,8 +8,18 @@
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
   </head>
-
+    <nav>
+      <ul>
+        <li><%= link_to "Home", root_path %></li>
+        <li><%= link_to "About", simple_pages_about_path %></li>
+        <li><%= link_to "Contact", simple_pages_contact_path %></li>
+      </ul>
+    </nav>
   <body>
-    <%= yield %>
+  <%= yield %>
+
+<footer>
+  &copy; 2019 Unleashed Beard
+</footer>
   </body>
 </html>
